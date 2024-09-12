@@ -67,8 +67,9 @@
             position: absolute;
             right: 0;
             bottom: 0;
-            width: 300px;
-            height: auto;
+            height: 100%; /* Устанавливает высоту изображения равной высоте слайдера */
+            width: auto;  /* Автоматически рассчитывает ширину с учетом высоты */
+            object-fit: cover; /* Обрезает изображение, сохраняя его пропорции */
             opacity: 0.8;
             z-index: 0;
         }
@@ -134,18 +135,18 @@
         }
 
         .service-title {
-            font-size: 24px;
+            font-size: 20px; /* Было 24px */
             margin-bottom: 10px;
         }
 
         .service-description {
-            font-size: 14px;
+            font-size: 12px; /* Было 14px */
             color: #aaaaaa;
             margin-bottom: 20px;
         }
 
         .service-price {
-            font-size: 18px;
+            font-size: 16px; /* Было 18px */
             font-weight: bold;
             margin: 10px 0;
         }
