@@ -75,34 +75,18 @@
         }
 
         @media (max-width: 768px) {
-            .slider {
-                padding: 0;
-                position: relative;
-            }
-
-            .slider-content {
-                max-width: 100%;
-                padding-left: 20px;
-                padding-right: 40px;
-                text-align: center;
-            }
-
-            .slider-title {
-                font-size: 28px;
-            }
-
-            .slider-description {
-                font-size: 16px;
-            }
-
-             .slider img::before {
+           .slider {
+               position: relative;
+           }
+       
+           .slider img::before {
                content: "";
                position: absolute;
                top: 0;
                left: 0;
                width: 100%;
                height: 100%;
-               background: rgba(0, 0, 0, 0.8); /* Полупрозрачный черный слой */
+               background: rgba(0, 0, 0, 0.7); /* Увеличили затемнение до 70% */
                z-index: 1;
            }
        
@@ -114,7 +98,8 @@
                opacity: 0.8;
                z-index: 0;
            }
-        }
+       }
+
 
         /* Плеер */
         #player {
