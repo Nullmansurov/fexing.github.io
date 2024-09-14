@@ -18,7 +18,7 @@
         <div class='slider-content'>
             <h1 class='slider-title'>Task content?</h1>
             <p class='slider-description'>We handle everything social media related – from script to final cut. Tell us your vision, and we'll bring it to life.</p>
-            <button class='slider-btn' onclick="window.open('https://example.com', '_blank');">Samples</button>
+            <button class='slider-btn' onclick="scrollToServices()">Samples</button>
             <button class='slider-btn' onclick="window.open('https://wa.me/77711485716', '_blank');">Contact us on WhatsApp</button>
         </div>
         <img alt='Image' src='image.png'/>
@@ -30,7 +30,7 @@
     </script>
 
     <!-- Services -->
-    <div class='services'>
+    <div id="services" class='services'>
         <div class='service-card'>
             <h2 class='service-title'>Enhance Video/Photo Resolution</h2>
             <p class='service-description'>We can boost the resolution of your photos and videos to 4K quality. There's no need to invest in expensive equipment for high-quality results. Simply shoot your video in good lighting with your smartphone, and we'll enhance it to 4K.</p>
@@ -60,6 +60,12 @@
         <script async id='dsq-count-scr' src='//scaload-1.disqus.com/count.js'></script>
     </div>
 </div>
+
+<script>
+    function scrollToServices() {
+        document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
 
 <script src="scripts.js"></script>
 <!--Start of Tawk.to Script-->
